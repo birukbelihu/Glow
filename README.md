@@ -32,7 +32,7 @@
    <dependency>
      <groupId>com.github.birukbelihu</groupId>
      <artifactId>glow</artifactId>
-     <version>1.0.0</version>
+     <version>1.2.0</version>
    </dependency>
    ```
 ---
@@ -51,7 +51,7 @@ public class Main {
 }
 ```
 
-## Tested and works on consoles with 24-bit true color support.
+### Tested and works on consoles with 24-bit true color support.
 
 ---
 
@@ -68,7 +68,7 @@ public class Main {
 
 ## 📄 Demo & Documentation
 
-Check out our GitHub project page for:
+Check out [Main.java](https://github.com/birukbelihu/Glow/blob/master/src/main/java/Main.java) for:
 - ✅ Full usage examples  
 - ✅ Tag reference documentation  
 - ✅ Quickstart code snippets  
@@ -84,12 +84,13 @@ Want to improve `Glow`? Contributions are welcome!
 
 ---
 
-Shine bright in your terminal! 🚀 Made with ❤️ by **[BirukBelihu](https://github.com/birukbelihu)**
+Shine bright in your terminal! 🚀 
+Made with ❤️ by **[BirukBelihu](https://github.com/birukbelihu)**
 
 Support for `[color=#hex]…[/color]` and `[bg=#hex]…[/bg]` tags will be added in upcoming releases 🚀
 
 ---
 
-## 🏗 License
+## 📄 License
 
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for full details.
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.

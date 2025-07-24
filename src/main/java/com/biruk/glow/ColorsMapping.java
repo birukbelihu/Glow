@@ -12,6 +12,7 @@ public class ColorsMapping {
             Map.entry("green", "\u001B[32m"),
             Map.entry("yellow", "\u001B[33m"),
             Map.entry("blue", "\u001B[34m"),
+            Map.entry("purple", "\\u001B[35m"),
             Map.entry("magenta", "\u001B[35m"),
             Map.entry("cyan", "\u001B[36m"),
             Map.entry("white", "\u001B[37m")
@@ -23,6 +24,7 @@ public class ColorsMapping {
             Map.entry("bg-green", "\u001B[42m"),
             Map.entry("bg-yellow", "\u001B[43m"),
             Map.entry("bg-blue", "\u001B[44m"),
+            Map.entry("bg-purple", "\\u001B[45m"),
             Map.entry("bg-magenta", "\u001B[45m"),
             Map.entry("bg-cyan", "\u001B[46m"),
             Map.entry("bg-white", "\u001B[47m")

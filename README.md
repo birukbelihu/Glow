@@ -69,7 +69,7 @@ public class Main {
 
 ## 📄 Demo & Documentation
 
-Check out [Main.java](https://github.com/birukbelihu/Glow/blob/master/src/main/java/Main.java) for:
+Check out the [Main](https://github.com/birukbelihu/Glow/blob/master/src/main/java/Main.java) class for:
 - ✅ Full usage examples  
 - ✅ Tag reference documentation  
 - ✅ Quickstart code snippets  

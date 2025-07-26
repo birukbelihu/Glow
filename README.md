@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/birukbelihu/Glow.svg)](https://jitpack.io/#birukbelihu/Glow)
+
 # Glow 🌈
 
 **Glow** is a lightweight, **markdown-style console text formatter** for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.

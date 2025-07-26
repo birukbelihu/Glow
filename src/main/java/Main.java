@@ -20,7 +20,7 @@ public class Main {
                  \\____| |_|  \\___/    \\_/\\_/
                 """, "blue bold");
 
-        Glow.println("BirukBelihu", "bold underline magenta");
+        Glow.println("Glow Java", "bold underline magenta");
         Glow.println("[bg-black cyan]This is a test of the Glow library.[/]");
 
         Glow.println("[rgb(255,0,0)]Red text[/]");

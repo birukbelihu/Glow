@@ -57,14 +57,14 @@ public class Main {
 ---
 
 ## 📦 Library Overview
-
-| Function               | Description                                            |
-|------------------------|--------------------------------------------------------|
-| `Glow.parse(String)`   | Converts your markdown-style tags to ANSI-coded string |
-| `Glow.print(String)`   | Prints without newline                                 |
-| `Glow.println(String)` | Prints with newline                                    |
-| `Glow.RESET`           | ANSI reset code                                        |
-
+| Function                                  | Description                                            |
+|-------------------------------------------|--------------------------------------------------------|
+| `Glow.parse(String text)`                 | Converts your markdown-style tags to ANSI-coded string |
+| `Glow.print(String text)`                 | Prints without newline                                 |
+| `Glow.println(String text)`               | Prints with newline                                    |
+| `Glow.print(String text, String style)`   | Prints without newline with a provided style           |
+| `Glow.println(String text, String style)` | Prints with newline with a provided style              |
+| `Glow.RESET`                              | ANSI reset code                                        |
 ---
 
 ## 📄 Demo & Documentation

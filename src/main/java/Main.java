@@ -11,5 +11,16 @@ public class Main {
         Glow.println("[bg-yellow black italic]Warning:[/] Low disk space.");
 
         Glow.println("[red bold]Error:[/] Something went wrong!");
+
+        Glow.print("""
+                  ____   _
+                 / ___| | |   ___   __      __
+                | |  _  | |  / _ \\  \\ \\ /\\ / /
+                | |_| | | | | (_) |  \\ V  V /
+                 \\____| |_|  \\___/    \\_/\\_/
+                """, "blue bold");
+
+        Glow.println("BirukBelihu", "bold underline magenta");
+        Glow.println("[bg-black cyan]This is a test of the Glow library.[/]");
     }
 }

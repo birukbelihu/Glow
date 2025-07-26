@@ -32,7 +32,7 @@
    <dependency>
      <groupId>com.github.birukbelihu</groupId>
      <artifactId>glow</artifactId>
-     <version>1.2.0</version>
+     <version>1.3.1</version>
    </dependency>
    ```
 ---

@@ -88,8 +88,6 @@ Want to improve `Glow`? Contributions are welcome!
 Shine bright in your terminal! 🚀 
 Made with ❤️ by **[BirukBelihu](https://github.com/birukbelihu)**
 
-Support for `[color=#hex]…[/color]` and `[bg=#hex]…[/bg]` tags will be added in upcoming releases 🚀
-
 ---
 
 ## 📄 License

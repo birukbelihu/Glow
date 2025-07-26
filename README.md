@@ -7,7 +7,7 @@
 ### ⭐ Features
 
 - ✅ **Markdown-style tags**: `[red]`, `[green bold]`, `[italic underline]`
-- 🎨 **Foreground & background colors**
+- 🎨 **Foreground & background colors with support for custom rgb & hexadecimal colors along with predefined colors**
 - 🪄 **Text styles**: `bold`, `dim`, `italic`, `underline`
 - 🔄 **Nested tag support**
 

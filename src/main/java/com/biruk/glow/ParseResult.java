@@ -1,5 +1,8 @@
 package com.biruk.glow;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ParseResult {
     String result;
     int nextIndex;
@@ -12,6 +15,9 @@ public class ParseResult {
     public static ParseResult parseRecursive(@org.jetbrains.annotations.NotNull String input, int start) {
         StringBuilder output = new StringBuilder();
         int i = start;
+
+        Pattern rgbPattern = Pattern.compile("^rgb\\((\\d{1,3}),(\\d{1,3}),(\\d{1,3})\\)$");
+        Pattern hexPattern = Pattern.compile("^hex\\(#([A-Fa-f0-9]{6})\\)$");
 
         while (i < input.length()) {
             if (input.startsWith("[/", i)) {
@@ -30,9 +36,28 @@ public class ParseResult {
                 StringBuilder ansi = new StringBuilder();
                 for (String tag : tags) {
                     tag = tag.toLowerCase();
-                    if (ColorsMapping.containsForeColor(tag)) ansi.append(ColorsMapping.getForeColor(tag));
-                    else if (ColorsMapping.containsBackgroundColor(tag)) ansi.append(ColorsMapping.getBackgroundColor(tag));
-                    else if (ColorsMapping.containsStyle(tag)) ansi.append(ColorsMapping.getStyle(tag));
+
+                    Matcher rgbMatcher = rgbPattern.matcher(tag);
+                    Matcher hexMatcher = hexPattern.matcher(tag);
+
+                    if (rgbMatcher.matches()) {
+                        int r = Integer.parseInt(rgbMatcher.group(1));
+                        int g = Integer.parseInt(rgbMatcher.group(2));
+                        int b = Integer.parseInt(rgbMatcher.group(3));
+                        ansi.append("\u001b[38;2;").append(r).append(";").append(g).append(";").append(b).append("m");
+                    } else if (hexMatcher.matches()) {
+                        String hex = hexMatcher.group(1);
+                        int r = Integer.parseInt(hex.substring(0, 2), 16);
+                        int g = Integer.parseInt(hex.substring(2, 4), 16);
+                        int b = Integer.parseInt(hex.substring(4, 6), 16);
+                        ansi.append("\u001b[38;2;").append(r).append(";").append(g).append(";").append(b).append("m");
+                    } else if (ColorsMapping.containsForeColor(tag)) {
+                        ansi.append(ColorsMapping.getForeColor(tag));
+                    } else if (ColorsMapping.containsBackgroundColor(tag)) {
+                        ansi.append(ColorsMapping.getBackgroundColor(tag));
+                    } else if (ColorsMapping.containsStyle(tag)) {
+                        ansi.append(ColorsMapping.getStyle(tag));
+                    }
                 }
 
                 ParseResult inner = parseRecursive(input, end + 1);

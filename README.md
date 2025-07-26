@@ -34,7 +34,7 @@
    <dependency>
      <groupId>com.github.birukbelihu</groupId>
      <artifactId>glow</artifactId>
-     <version>1.3.1</version>
+     <version>Tag</version>
    </dependency>
    ```
 ---

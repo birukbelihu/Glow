@@ -1,3 +1,7 @@
+![GitHub Repo stars](https://img.shields.io/github/stars/BirukBelihu/Glow)
+![GitHub forks](https://img.shields.io/github/forks/BirukBelihu/Glow)
+![GitHub issues](https://img.shields.io/github/issues/BirukBelihu/Glow)
+![GitHub license](https://img.shields.io/github/license/BirukBelihu/Glow)
 [![](https://jitpack.io/v/birukbelihu/Glow.svg)](https://jitpack.io/#birukbelihu/Glow)
 
 # Glow 🌈

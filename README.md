@@ -65,9 +65,6 @@ public class Main {
 ### Output
 ![Glow](images/sample_2.png)
 
-
-### Tested and works on consoles with 24-bit true color support.
-
 ---
 
 ## 📦 Library Overview

@@ -21,7 +21,7 @@
 
 ### Sample
 
-![Glow](images/sample_1.png)
+![Glow Sample](images/sample_1.png)
 
 ## 🚀 Getting Started
 

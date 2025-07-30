@@ -89,10 +89,7 @@ Check out the [Main](https://github.com/birukbelihu/Glow/blob/master/src/main/ja
 
 ## 🙌 Contribute
 
-Want to improve `Glow`? Contributions are welcome!  
-- Add nested/background color parsing  
-- Support for named themes or gradient output  
-- Provide test coverage (JUnit) or CI setup  
+Want to improve `Glow`? Contributions are welcome!
 
 ---
 

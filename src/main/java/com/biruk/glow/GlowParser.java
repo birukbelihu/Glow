@@ -2,17 +2,19 @@ package com.biruk.glow;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
-public class ParseResult {
+public class GlowParser {
     String result;
     int nextIndex;
 
-    public ParseResult(String result, int nextIndex){
+    public GlowParser(String result, int nextIndex){
         this.result = result;
         this.nextIndex = nextIndex;
     }
 
-    public static ParseResult parseRecursive(@org.jetbrains.annotations.NotNull String input, int start) {
+    @NotNull
+    public static GlowParser parseRecursive(@NotNull String input, int start) {
         StringBuilder output = new StringBuilder();
         int i = start;
 
@@ -23,7 +25,7 @@ public class ParseResult {
             if (input.startsWith("[/", i)) {
                 int end = input.indexOf("]", i);
                 if (end == -1) break;
-                return new ParseResult(output.toString(), end + 1);
+                return new GlowParser(output.toString(), end + 1);
             }
 
             if (input.charAt(i) == '[') {
@@ -51,17 +53,17 @@ public class ParseResult {
                         int g = Integer.parseInt(hex.substring(2, 4), 16);
                         int b = Integer.parseInt(hex.substring(4, 6), 16);
                         ansi.append("\u001b[38;2;").append(r).append(";").append(g).append(";").append(b).append("m");
-                    } else if (ColorsMapping.containsForeColor(tag)) {
-                        ansi.append(ColorsMapping.getForeColor(tag));
-                    } else if (ColorsMapping.containsBackgroundColor(tag)) {
-                        ansi.append(ColorsMapping.getBackgroundColor(tag));
-                    } else if (ColorsMapping.containsStyle(tag)) {
-                        ansi.append(ColorsMapping.getStyle(tag));
+                    } else if (UnicodeMapping.containsForeColor(tag)) {
+                        ansi.append(UnicodeMapping.getForeColor(tag));
+                    } else if (UnicodeMapping.containsBackgroundColor(tag)) {
+                        ansi.append(UnicodeMapping.getBackgroundColor(tag));
+                    } else if (UnicodeMapping.containsStyle(tag)) {
+                        ansi.append(UnicodeMapping.getStyle(tag));
                     }
                 }
 
-                ParseResult inner = parseRecursive(input, end + 1);
-                output.append(ansi).append(inner.result).append(ColorsMapping.ANSI_RESET);
+                GlowParser inner = parseRecursive(input, end + 1);
+                output.append(ansi).append(inner.result).append(UnicodeMapping.ANSI_RESET);
 
                 i = inner.nextIndex;
             } else {
@@ -70,6 +72,6 @@ public class ParseResult {
             }
         }
 
-        return new ParseResult(output.toString(), i);
+        return new GlowParser(output.toString(), i);
     }
 }

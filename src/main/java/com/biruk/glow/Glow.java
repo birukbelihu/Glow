@@ -2,7 +2,7 @@ package com.biruk.glow;
 
 public class Glow {
     public static String parse(String text){
-        return ParseResult.parseRecursive(text, 0).result;
+        return GlowParser.parseRecursive(text, 0).result;
     }
 
     public static void print(String text){

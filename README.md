@@ -19,6 +19,10 @@
 
 ---
 
+### Sample
+
+![Glow](images/sample_1.png)
+
 ## 🚀 Getting Started
 
 ### Maven Setup (with JitPack)
@@ -51,12 +55,16 @@ import com.biruk.glow.Glow;
 public class Main {
    public static void main(String[] args){
       Glow.print("""
-              [cyan bold]Glow[/] is a lightweight, [bold]markdown-style console text formatter[/] for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
+              [cyan bold]Glow[/] is a lightweight, [bold]markdown-style console text formatter[/] for Java. \nIt enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
               """);
    }
 }
 
 ```
+
+### Output
+![Glow](images/sample_2.png)
+
 
 ### Tested and works on consoles with 24-bit true color support.
 

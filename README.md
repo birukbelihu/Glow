@@ -37,7 +37,7 @@
    </repositories>
    ```
 
-2. Add Glow dependency:
+2. Add Glow dependency inside the dependencies tag under properties:
    ```xml
    <dependency>
      <groupId>com.github.birukbelihu</groupId>

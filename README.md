@@ -16,6 +16,7 @@
 - 🎨 **Foreground & background colors with support for custom rgb & hexadecimal colors along with predefined ANSI colors**
 - 🪄 **Text styles**: `bold`, `dim`, `italic`, `underline`
 - 🔄 **Nested tag support**
+- 💻Cross platform
 
 ---
 

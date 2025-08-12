@@ -12,11 +12,11 @@
 
 ### ⭐ Features
 
+- 💻Cross platform (Windows, Linux, macOS)
 - ✅ **Markdown-style tags**: `[red]`, `[green bold]`, `[italic underline]`
-- 🎨 **Foreground & background colors with support for custom rgb & hexadecimal colors along with predefined ANSI colors**
+- 🎨 **Foreground & background colors with support for custom rgb & hexadecimal colors along with some predefined ANSI colors**
 - 🪄 **Text styles**: `bold`, `dim`, `italic`, `underline`
 - 🔄 **Nested tag support**
-- 💻Cross platform
 
 ---
 

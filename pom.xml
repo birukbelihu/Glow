@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>Glow</name>
-    <description>Glow is a lightweight, markdown-style console text formatter for Java.</description>
+    <description>Glow is a lightweight, markdown-style console text formatter library for Java.</description>
     <url>https://github.com/birukbelihu/glow</url>
 
     <licenses>
@@ -37,8 +37,8 @@
     </scm>
 
     <properties>
-        <maven.compiler.source>23</maven.compiler.source>
-        <maven.compiler.target>23</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

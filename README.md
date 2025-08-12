@@ -6,7 +6,7 @@
 
 # Glow 🌈
 
-**Glow** is a lightweight, **markdown-style console text formatter** for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
+**Glow** is a lightweight, **markdown-style console text formatter** library for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
 
 ---
 

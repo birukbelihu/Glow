@@ -4,17 +4,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 
-public class GlowParser {
+public class Parser {
     String result;
     int nextIndex;
 
-    public GlowParser(String result, int nextIndex){
+    public Parser(String result, int nextIndex){
         this.result = result;
         this.nextIndex = nextIndex;
     }
 
     @NotNull
-    public static GlowParser parseRecursive(@NotNull String input, int start) {
+    public static Parser parseRecursive(@NotNull String input, int start) {
         StringBuilder output = new StringBuilder();
         int i = start;
 
@@ -25,7 +25,7 @@ public class GlowParser {
             if (input.startsWith("[/", i)) {
                 int end = input.indexOf("]", i);
                 if (end == -1) break;
-                return new GlowParser(output.toString(), end + 1);
+                return new Parser(output.toString(), end + 1);
             }
 
             if (input.charAt(i) == '[') {
@@ -53,8 +53,8 @@ public class GlowParser {
                         int g = Integer.parseInt(hex.substring(2, 4), 16);
                         int b = Integer.parseInt(hex.substring(4, 6), 16);
                         ansi.append("\u001b[38;2;").append(r).append(";").append(g).append(";").append(b).append("m");
-                    } else if (Mapping.containsForeColor(tag)) {
-                        ansi.append(Mapping.getForeColor(tag));
+                    } else if (Mapping.containsForegroundColor(tag)) {
+                        ansi.append(Mapping.getForegroundColor(tag));
                     } else if (Mapping.containsBackgroundColor(tag)) {
                         ansi.append(Mapping.getBackgroundColor(tag));
                     } else if (Mapping.containsStyle(tag)) {
@@ -62,7 +62,7 @@ public class GlowParser {
                     }
                 }
 
-                GlowParser inner = parseRecursive(input, end + 1);
+                Parser inner = parseRecursive(input, end + 1);
                 output.append(ansi).append(inner.result).append(Mapping.ANSI_RESET);
 
                 i = inner.nextIndex;
@@ -72,6 +72,6 @@ public class GlowParser {
             }
         }
 
-        return new GlowParser(output.toString(), i);
+        return new Parser(output.toString(), i);
     }
 }

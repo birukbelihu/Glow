@@ -15,9 +15,9 @@
 - 💻Cross platform (Windows, Linux, macOS)
 - ✅ **Markdown-style tags**: `[red]`, `[green bold]`, `[italic underline]`
 - 🎨 **Foreground & background colors with support for custom rgb & hexadecimal colors along with some predefined ANSI colors**
-- 🪄 **Text styles**: `bold`, `dim`, `italic`, `underline`
+- 🪄 **Text styles**: `bold`, `dim`, `italic`, `underline`, `blink`, `strike` & more
 - 🔄 **Nested tag support**
-
+- 🔡 Case insensitive tag names(Bold, bold, BOLD).
 ---
 
 ### Sample

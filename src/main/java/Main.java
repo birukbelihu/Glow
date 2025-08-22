@@ -13,11 +13,16 @@ public class Main {
         Glow.println("[red bold]Error:[/] Something went wrong!");
 
         Glow.print("""
-                
+                         _
+                  __ _  | |   ___   __      __
+                 / _` | | |  / _ \\  \\ \\ /\\ / /
+                | (_| | | | | (_) |  \\ V  V /
+                 \\__, | |_|  \\___/    \\_/\\_/
+                 |___/
                 """, "blue bold");
 
-        Glow.println("Glow Java", "bold underline magenta");
-        Glow.println("[bg-black cyan]This is a test of the Glow library.[/]");
+        Glow.println("glow Java", "bold underline magenta");
+        Glow.println("[bg-black cyan]This is a test of the glow library.[/]");
 
         Glow.println("[rgb(255,56,0) italic underline]Red text[/]");
         Glow.println("[hex(#00FF00) bold dim bg-blue]Green text[/]");

@@ -2,7 +2,7 @@ package com.biruk.glow;
 
 import java.util.Map;
 
-public class UnicodeMapping {
+public class Mapping {
 
     public static final String ANSI_RESET = "\u001B[0m";
 

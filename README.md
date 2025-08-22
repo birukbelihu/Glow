@@ -1,12 +1,12 @@
-![GitHub Repo stars](https://img.shields.io/github/stars/BirukBelihu/Glow)
-![GitHub forks](https://img.shields.io/github/forks/BirukBelihu/Glow)
-![GitHub issues](https://img.shields.io/github/issues/BirukBelihu/Glow)
-![GitHub license](https://img.shields.io/github/license/BirukBelihu/Glow)
-[![](https://jitpack.io/v/birukbelihu/Glow.svg)](https://jitpack.io/#birukbelihu/Glow)
+![GitHub Repo stars](https://img.shields.io/github/stars/BirukBelihu/glow)
+![GitHub forks](https://img.shields.io/github/forks/BirukBelihu/glow)
+![GitHub issues](https://img.shields.io/github/issues/BirukBelihu/glow)
+![GitHub license](https://img.shields.io/github/license/BirukBelihu/glow)
+[![](https://jitpack.io/v/birukbelihu/Glow.svg)](https://jitpack.io/#birukbelihu/glow)
 
-# Glow 🌈
+# glow 🌈
 
-**Glow** is a lightweight, **markdown-style console text formatter** library for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
+**glow** is a lightweight, **markdown-style console text formatter** library for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ### Sample
 
-![Glow Sample](images/sample_1.png)
+![glow Sample](images/sample_1.png)
 
 ## 🚀 Getting Started
 
@@ -43,7 +43,7 @@
    <dependency>
      <groupId>com.github.birukbelihu</groupId>
      <artifactId>glow</artifactId>
-     <version>Tag</version>
+     <version>tag</version>
    </dependency>
    ```
 ---
@@ -56,7 +56,7 @@ import com.biruk.glow.Glow;
 public class Main {
    public static void main(String[] args){
       Glow.print("""
-              [cyan bold]Glow[/] is a lightweight, [bold]markdown-style console text formatter[/] for Java. \nIt enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
+              [cyan bold]glow[/] is a lightweight, [bold]markdown-style console text formatter[/] for Java. \nIt enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
               """);
    }
 }
@@ -64,7 +64,7 @@ public class Main {
 ```
 
 ### Output
-![Glow](images/sample_2.png)
+![glow](images/sample_2.png)
 
 ---
 
@@ -76,7 +76,6 @@ public class Main {
 | `Glow.println(String text)`               | Prints with newline                                    |
 | `Glow.print(String text, String style)`   | Prints without newline with a provided style           |
 | `Glow.println(String text, String style)` | Prints with newline with a provided style              |
-| `Glow.RESET`                              | ANSI reset code                                        |
 ---
 
 ## 📄 Demo & Documentation
@@ -90,7 +89,7 @@ Check out the [Main](https://github.com/birukbelihu/Glow/blob/master/src/main/ja
 
 ## 🙌 Contribute
 
-Want to improve `Glow`? Contributions are welcome!
+Want to improve `glow`? Contributions are welcome!
 
 ---
 

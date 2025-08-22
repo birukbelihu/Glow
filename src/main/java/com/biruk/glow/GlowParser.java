@@ -53,17 +53,17 @@ public class GlowParser {
                         int g = Integer.parseInt(hex.substring(2, 4), 16);
                         int b = Integer.parseInt(hex.substring(4, 6), 16);
                         ansi.append("\u001b[38;2;").append(r).append(";").append(g).append(";").append(b).append("m");
-                    } else if (UnicodeMapping.containsForeColor(tag)) {
-                        ansi.append(UnicodeMapping.getForeColor(tag));
-                    } else if (UnicodeMapping.containsBackgroundColor(tag)) {
-                        ansi.append(UnicodeMapping.getBackgroundColor(tag));
-                    } else if (UnicodeMapping.containsStyle(tag)) {
-                        ansi.append(UnicodeMapping.getStyle(tag));
+                    } else if (Mapping.containsForeColor(tag)) {
+                        ansi.append(Mapping.getForeColor(tag));
+                    } else if (Mapping.containsBackgroundColor(tag)) {
+                        ansi.append(Mapping.getBackgroundColor(tag));
+                    } else if (Mapping.containsStyle(tag)) {
+                        ansi.append(Mapping.getStyle(tag));
                     }
                 }
 
                 GlowParser inner = parseRecursive(input, end + 1);
-                output.append(ansi).append(inner.result).append(UnicodeMapping.ANSI_RESET);
+                output.append(ansi).append(inner.result).append(Mapping.ANSI_RESET);
 
                 i = inner.nextIndex;
             } else {

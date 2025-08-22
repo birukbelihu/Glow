@@ -3,7 +3,7 @@ import com.biruk.glow.Glow;
 public class Main {
     public static void main(String[] args){
         Glow.print("""
-                [cyan bold]Glow[/] is a lightweight, [bold]markdown-style console text formatter[/] for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
+                [cyan bold]glow[/] is a lightweight, [bold]markdown-style console text formatter[/] for Java. It enables developers to output styled text in the terminal using simple and readable tags like `[red bold]Error[/]`.
                 """);
 
         Glow.println("[green]Success: [bold]42 tests passed!!![/]");
@@ -13,11 +13,7 @@ public class Main {
         Glow.println("[red bold]Error:[/] Something went wrong!");
 
         Glow.print("""
-                  ____   _
-                 / ___| | |   ___   __      __
-                | |  _  | |  / _ \\  \\ \\ /\\ / /
-                | |_| | | | | (_) |  \\ V  V /
-                 \\____| |_|  \\___/    \\_/\\_/
+                
                 """, "blue bold");
 
         Glow.println("Glow Java", "bold underline magenta");
